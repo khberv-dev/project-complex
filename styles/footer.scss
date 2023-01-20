@@ -1,0 +1,25 @@
+@import "kit/colors";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: $gray;
+  padding: 40px 15%;
+  height: 200px;
+
+  .footer-project-title {
+    display: flex;
+    color: white;
+    font-size: 18px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .footer-title, a {
+    color: $footer-title;
+    font-family: "Source Sans Pro", serif;
+  }
+}

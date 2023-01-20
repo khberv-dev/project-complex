@@ -1,0 +1,38 @@
+@import "kit/dimensions";
+@import "kit/colors";
+@import "kit/fonts";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 15%;
+  font-family: "Source Sans Pro Bold", sans-serif;
+  overflow: visible;
+
+  color: $text;
+
+  .nav-title {
+    font-size: $nav-title;
+    margin-right: 165px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: $nav-items;
+
+    li {
+      min-width: 90px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 30px;
+      padding: 4px 5px;
+      border-bottom: 2px solid #FFFFFF00;
+
+      &:hover {
+        border-bottom: 2px solid #FFFFFF;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import "kit/dimensions";
+@import "kit/colors";
+@import "kit/animations";
+@import "kit/fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  background: black;
+}
+
+section {
+  background: $bg-section;
+  min-height: 100vh;
+}
+
+#home {
+  background-image: url("../assets/bg-main.png");
+  background-repeat: no-repeat;
+  background-size: 110vw 120vh;
+  animation: bg-move-x 30s infinite,
+  bg-move-x 40s infinite;
+}
+
+.main-title {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+
+  div {
+    text-align: center;
+  }
+
+  .main-logo {
+    width: 64px;
+    height: 64px;
+    animation: logo-rotation 1s infinite;
+  }
+}
+
+.main-title-text {
+  color: $text;
+  font-size: $main-text;
+  font-family: Oswald, serif;
+}
+
+.main-title-desc {
+  color: $text-fade;
+  font-size: $main-text-desc;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-title {
+  font-size: 24px;
+}
+
+.color-s-title {
+  color: $gray;
+}
+
+#learn-more {
+  position: relative;
+  background: url("../assets/bg-learn-more.png");
+  background-size: cover;
+
+  .bg-learn-more {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(253, 62, 62, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ic-play {
+  z-index: 2;
+  cursor: pointer;
+  transition-duration: .4s;
+  border-radius: 100%;
+
+  &:hover {
+    box-shadow: white 0 0 15px;
+  }
+}

@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../assets/fonts/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: url("../../assets/fonts/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../../assets/fonts/Oswald-Bold.ttf"); }
+
+.burger {
+  display: none;
+  width: min-content;
+  height: min-content;
+  z-index: 4; }
+
+.burger .burger-bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: white;
+  margin-bottom: 3px;
+  transition-duration: .2s;
+  border-radius: 10%; }
+
+#burger-toggle:checked ~ .burger .burger-bar:nth-child(1) {
+  width: 5px; }
+
+#burger-toggle:checked ~ .burger .burger-bar:nth-child(2) {
+  width: 10px; }
+
+#burger-toggle:checked ~ .burger .burger-bar:nth-child(3) {
+  width: 18px; }
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block; }
+  nav {
+    padding: 20px 10%; }
+    nav ul {
+      transition-duration: .4s;
+      position: fixed;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      width: 150vw;
+      height: 150vw;
+      background: #4E4E4E;
+      scale: 0;
+      padding-top: 80px;
+      transform-origin: 80vw 5vh;
+      border-radius: 1000%;
+      z-index: 2; }
+      nav ul li {
+        width: 100vw;
+        padding: 10px 0; }
+        nav ul li:hover {
+          border-color: transparent;
+          background: #ffd943; }
+  #burger-toggle:checked ~ .nav-menu {
+    scale: 1;
+    border-radius: 0;
+    height: 100vh; } }

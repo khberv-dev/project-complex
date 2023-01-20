@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../assets/fonts/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: url("../../assets/fonts/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../../assets/fonts/Oswald-Bold.ttf"); }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 15%;
+  font-family: "Source Sans Pro Bold", sans-serif;
+  overflow: visible;
+  color: #FFFFFF; }
+  nav .nav-title {
+    font-size: 20px;
+    margin-right: 165px; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px; }
+    nav ul li {
+      min-width: 90px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 30px;
+      padding: 4px 5px;
+      border-bottom: 2px solid #FFFFFF00; }
+      nav ul li:hover {
+        border-bottom: 2px solid #FFFFFF; }

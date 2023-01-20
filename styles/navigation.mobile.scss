@@ -1,0 +1,75 @@
+@import "kit/dimensions";
+@import "kit/colors";
+@import "kit/fonts";
+
+.burger {
+  display: none;
+  width: min-content;
+  height: min-content;
+  z-index: 4;
+}
+
+.burger .burger-bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: white;
+  margin-bottom: 3px;
+  transition-duration: .2s;
+  border-radius: 10%;
+}
+
+#burger-toggle:checked ~ .burger {
+  .burger-bar:nth-child(1) {
+    width: 5px;
+  }
+
+  .burger-bar:nth-child(2) {
+    width: 10px;
+  }
+
+  .burger-bar:nth-child(3) {
+    width: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  nav {
+    padding: 20px 10%;
+
+    ul {
+      transition-duration: .4s;
+      position: fixed;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      width: 150vw;
+      height: 150vw;
+      background: $gray;
+      scale: 0;
+      padding-top: 80px;
+      transform-origin: 80vw 5vh;
+      border-radius: 1000%;
+      z-index: 2;
+
+      li {
+        width: 100vw;
+        padding: 10px 0;
+
+        &:hover {
+          border-color: transparent;
+          background: $bg-mobile-menu-selected;
+        }
+      }
+    }
+  }
+
+  #burger-toggle:checked ~ .nav-menu {
+    scale: 1;
+    border-radius: 0;
+    height: 100vh;
+  }
+}

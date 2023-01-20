@@ -1,0 +1,37 @@
+@import "kit/colors";
+@import "kit/fonts";
+
+.about-us-main-title {
+  font-size: 48px;
+  color: $gray;
+  font-family: Oswald, serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-box {
+  display: flex;
+  column-count: 2;
+  justify-content: space-between;
+  padding: 0 15%;
+
+  div {
+    max-width: 40%;
+  }
+}
+
+.bt-read-more {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background: $bg-color;
+  padding: 10px 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Oswald, serif;
+  transition: .2s;
+
+  &:hover {
+    scale: 1.2;
+  }
+}

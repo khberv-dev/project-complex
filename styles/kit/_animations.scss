@@ -1,0 +1,37 @@
+@keyframes bg-move-x {
+  0% {
+    background-position-x: 0;
+  }
+
+  50% {
+    background-position-x: -50px;
+  }
+
+  100% {
+    background-position-x: 0;
+  }
+}
+
+@keyframes bg-move-y {
+  0% {
+    background-position-y: 0;
+  }
+
+  50% {
+    background-position-y: -70px;
+  }
+
+  100% {
+    background-position-y: 0;
+  }
+}
+
+@keyframes logo-rotation {
+  50% {
+    transform: rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateZ(180deg);
+  }
+}

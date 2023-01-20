@@ -1,0 +1,7 @@
+@media screen and (max-width: 678px) {
+  .content-box {
+    display: flex;
+    flex-direction: column; }
+    .content-box div {
+      max-width: 100%;
+      margin-bottom: 30px; } }

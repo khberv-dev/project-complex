@@ -1,0 +1,103 @@
+@keyframes bg-move-x {
+  0% {
+    background-position-x: 0; }
+  50% {
+    background-position-x: -50px; }
+  100% {
+    background-position-x: 0; } }
+
+@keyframes bg-move-y {
+  0% {
+    background-position-y: 0; }
+  50% {
+    background-position-y: -70px; }
+  100% {
+    background-position-y: 0; } }
+
+@keyframes logo-rotation {
+  50% {
+    transform: rotateZ(180deg); }
+  100% {
+    transform: rotateZ(180deg); } }
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../assets/fonts/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "Source Sans Pro Bold";
+  src: url("../../assets/fonts/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../../assets/fonts/Oswald-Bold.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden; }
+
+html {
+  background: black; }
+
+section {
+  background: #EEEEEE;
+  min-height: 100vh; }
+
+#home {
+  background-image: url("../assets/bg-main.png");
+  background-repeat: no-repeat;
+  background-size: 110vw 120vh;
+  animation: bg-move-x 30s infinite, bg-move-x 40s infinite; }
+
+.main-title {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center; }
+  .main-title div {
+    text-align: center; }
+  .main-title .main-logo {
+    width: 64px;
+    height: 64px;
+    animation: logo-rotation 1s infinite; }
+
+.main-title-text {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-family: Oswald, serif; }
+
+.main-title-desc {
+  color: #a2a2a2;
+  font-size: 24px; }
+
+.text-center {
+  text-align: center; }
+
+.m-title {
+  font-size: 24px; }
+
+.color-s-title {
+  color: #4E4E4E; }
+
+#learn-more {
+  position: relative;
+  background: url("../assets/bg-learn-more.png");
+  background-size: cover; }
+  #learn-more .bg-learn-more {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(253, 62, 62, 0.1);
+    width: 100%;
+    height: 100%; }
+
+.ic-play {
+  z-index: 2;
+  cursor: pointer;
+  transition-duration: .4s;
+  border-radius: 100%; }
+  .ic-play:hover {
+    box-shadow: white 0 0 15px; }

@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #4E4E4E;
+  padding: 40px 15%;
+  height: 200px; }
+  footer .footer-project-title {
+    display: flex;
+    color: white;
+    font-size: 18px; }
+    footer .footer-project-title img {
+      width: 20px;
+      height: 20px; }
+  footer .footer-title, footer a {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: "Source Sans Pro", serif; }
